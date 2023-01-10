@@ -46,7 +46,7 @@ def transaction_append(pur):
 
         filename = "Fare/" + sus_code + ".json"
         print("Your transaction ID is: " + sus_code + "\n")
-        jsonObj = json.dumps(data)
+        jsonObj = json.dumps(data,indent = 4)
         with open(filename, "w") as f:
             f.write(jsonObj)
 
